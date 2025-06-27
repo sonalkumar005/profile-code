@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  background:linear-gradient(to right, #2c3e50, #3498db );
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color:white;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
+
+.image-container {
+    background-color: #e74c3c;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.border-ring {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #ff0000,
+    #ff9900,
+    #33cc33,
+    #3399ff,
+    #9900cc,
+    #ff0000
+  );
+  animation: rotate 4s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-ring img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.info {
+  padding: 20px;
+}
+
+.info h2 {
+  margin: 10px 0;
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+.info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.info ul {
+  list-style-type: none;
+  padding: 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.info ul li {
+  margin: 4px 0;
+}
+
+/* Animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
